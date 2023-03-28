@@ -9,7 +9,7 @@ products_df = pd.read_csv('data/amazon.csv')
 
 # Define chatbot function
 def start(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Hi! I'm an AI Shopping chatbot. What can I help you with today?")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Hi! I'm ShopGenie.\nAn AI Shopping chatbot. What can I help you with today?")
 
 def handle_message(update, context):
     user_input = update.message.text.lower()
